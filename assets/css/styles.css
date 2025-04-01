@@ -1,0 +1,23 @@
+body {
+    background-color: orange;
+    }
+
+footer {
+
+text-align: center;
+padding: 10px;
+color: white;
+background-color: none;
+padding: 10px;
+position: fixed;
+bottom: 0;
+width: 100%;
+
+}
+
+
+
+.small-image {
+    width: 50px;  /* Set smaller width */
+    height: 50px; /* Set smaller height */
+}
