@@ -1,47 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/styles.css"
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        body {
+            background-image: url("../images/background.img1.jpg");
+            background-repeat: no-repeat;
+            /* Prevents the background image from repeating */
+            background-size: cover;
+            background-position: center;
+        }
 
+        .btn {
+            color: #3B2F2F !important; /* Sets the text color of the button */
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* Reduces the overlay opacity to make the image less blurry */
+            z-index: 1;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: auto;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Optional: Add a background for better visibility */
+            font-size: 14px;
+            /* Adjust font size if needed */
+        }
+
+        .navbar .nav-link {
+            color: #3B2F2F !important; /* Sets the text color of the navbar links */
+        }
+
+        .navbar .nav-link.active {
+            font-weight: bold; /* Makes the active link bold */
+        }
+
+        .navbar .navbar-nav {
+            margin-left: auto; /* Aligns the nav links to the right */
+        }
+        section {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/images/easy-travel.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white; /* Ensures text is visible on the background */
+            position: relative;
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        section > div {
+            position: relative;
+            z-index: 2; /* Ensures content is above the overlay */
+        }
+        </style>
 </head>
-    <body>
-        <h1>Easy Travel</h1>
-    <p>Great Places to Escape to</p>
-        <div id="Guide">
-            <ul>
-                <li><a href="#About Us">About Us</a></li>
-                <li><a href="#Support">Support</a></li>
-                <li><a href="#Offers">Offers</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
 
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/easy-travel.jpg" alt="Easy Travel Logo" width="30" height="30"
+                    class="d-inline-block align-text-top">
+                Easy Travel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About Us">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Support">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-               
-        
-       <img src="assets/images/easy-travel.jpg" alt="Easy Travel">
-    
-    <h2>About Us</h2>
-        <p>We are a passionate team dedicated to making a difference. Our mission is to provide top-notch services to our customers.</p>
-        <h3>Support</h3>
-        <p>We offer a crucial service that ensures travelers have a smooth and enjoyable experience from start to finish. Whether it's answering inquiries about booking processes.</p> 
-        
-    <h3>Offers</h3>
-        <p>Travel offers are a fantastic way to save money while exploring new destinations. From discounted flights and hotel deals to all-inclusive vacation packages.</p>
-    
-    <div class="image-container">        
-        <img src="assets/images/summer.jpg">
- 
-        
-    </div>
-    </body>
-    
-      
-    
+    </nav>
+
+    <section class="d-flex justify-content-center align-items-center text-center text-white" style="height: 100vh; background: url('assets/images/nature.png') no-repeat center center; background-size: cover;">
+        <div>
+            <h1 class="display-4">Welcome to Easy Travel</h1>
+            <p class="lead">We are here to offer you a great service.</p>
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">Contact us</a>
+        </div>
+    </section>
+
     <footer>
-        <p>&copy; 2025 My Website | All Rights Reserved</p>
+        <p> 2025 My Website | All Rights Reserved</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
