@@ -9,29 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <style>
-        body {
-            background-image: url("../images/background.img1.jpg");
-            background-repeat: no-repeat;
-            /* Prevents the background image from repeating */
-            background-size: cover;
-            background-position: center;
-        }
+       
 
         .btn {
-            color: #3B2F2F !important; /* Sets the text color of the button */
+            color: #3B2F2F !important;
+            /* Sets the text color of the button */
         }
 
-        section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.3); /* Reduces the overlay opacity to make the image less blurry */
-            z-index: 1;
-        }
-
+        
         footer {
             position: fixed;
             bottom: 0;
@@ -45,22 +30,27 @@
         }
 
         .navbar .nav-link {
-            color: #3B2F2F !important; /* Sets the text color of the navbar links */
+            color: #3B2F2F !important;
+            /* Sets the text color of the navbar links */
         }
 
         .navbar .nav-link.active {
-            font-weight: bold; /* Makes the active link bold */
+            font-weight: bold;
+            /* Makes the active link bold */
         }
 
         .navbar .navbar-nav {
-            margin-left: auto; /* Aligns the nav links to the right */
+            margin-left: auto;
+            /* Aligns the nav links to the right */
         }
+
         section {
             background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/images/easy-travel.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            color: white; /* Ensures text is visible on the background */
+            color: white;
+            /* Ensures text is visible on the background */
             position: relative;
         }
 
@@ -74,18 +64,108 @@
             z-index: 1;
         }
 
-        section > div {
+        section>div {
             position: relative;
-            z-index: 2; /* Ensures content is above the overlay */
+            z-index: 2;
+            /* Ensures content is above the overlay */
         }
-        </style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            /* Ensures the navbar stays above other elements */
+
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            position: relative;
+            background-color: #f8f9fa;
+            /* Light gray background */
+            padding: 20px 20px 60px;
+            /* Space for footer content */
+        }
+
+        .social-icons {
+            position: absolute;
+            bottom: 20px;
+            /* Distance from the bottom of the footer */
+            right: 20px;
+            /* Distance from the right of the footer */
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            background-color: #3b5998;
+            /* Example color (Facebook blue) */
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .social-icons a:hover {
+            background-color: #555;
+            /* Hover effect */
+        }
+    </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="assets/images/easy-travel.jpg" alt="Easy Travel Logo" width="30" height="30"
+                <img src="assets/images/logo-easy-travel.jpg" alt="Easy Travel Logo" width="30" height="30"
                     class="d-inline-block align-text-top">
                 Easy Travel
             </a>
@@ -99,30 +179,225 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#About Us">About</a>
+                        <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Support">Services</a>
+                        <a class="nav-link" href="#services">Our Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#flight only">Flight Only</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accommodation">Accommodation Only</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#plan your package">Plan Your Tour Package</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
-        </div>
+
     </nav>
 
-    <section class="d-flex justify-content-center align-items-center text-center text-white" style="height: 100vh; background: url('assets/images/nature.png') no-repeat center center; background-size: cover;">
+    <section class="d-flex justify-content-center align-items-center text-center text-white"
+        style="height: 100vh; background: url('assets/images/World.png') no-repeat center center; background-size: cover;">
         <div>
             <h1 class="display-4">Welcome to Easy Travel</h1>
             <p class="lead">We are here to offer you a great service.</p>
-            <a href="#contact" class="btn btn-primary btn-lg mt-3">Contact us</a>
+            <a href="#contact" class="btn btn-light btn-lg mt-3">Contact us</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">About Us</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div class="p-3">
+                        <h5>Our Mission</h5>
+                        <p>To provide seamless and memorable travel experiences for our customers worldwide.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-3">
+                        <h5>Our Vision</h5>
+                        <p>To be the leading travel service provider, connecting people to their dream destinations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-3">
+                        <h5>Why Choose Us</h5>
+                        <p>We offer personalized services, competitive pricing, and 24/7 customer support.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="card p-3">
+                        <h5 class="card-title">Flight Booking</h5>
+                        <p class="card-text">Book flights to your favorite destinations with ease.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="card p-3">
+                        <h5 class="card-title">Hotel Reservations</h5>
+                        <p class="card-text">Find and book the best hotels at affordable prices.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="card p-3">
+                        <h5 class="card-title">Tour Packages</h5>
+                        <p class="card-text">Explore our curated tour packages for unforgettable experiences.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="card p-3">
+                        <h5 class="card-title">Travel Insurance</h5>
+                        <p class="card-text">Secure your trips with our comprehensive travel insurance plans.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h1> Flight Only</h1>
+    <form action="#" method="POST">
+        <label for="from">From:</label>
+        <input type="text" id="from" name="from" placeholder="Enter from" required>
+
+        <label for="destination">To:</label>
+        <input type="text" id="destination" name="destination" placeholder="Enter your destination" required>
+
+        <label for="departure-date">Departure Date:</label>
+        <input type="date" id="departure-date" name="departure-date" required>
+
+        <label for="arrival-date">Arrival Date:</label>
+        <input type="date" id="arrival-date" name="arrival-date" required>
+
+        <label for="guest-number">Number of Guests:</label>
+        <input type="number" id="guest-number" name="guest-number" min="1" max="10" required>
+
+        <label for="adult-ages">Adult Ages:</label>
+        <input type="text" id="adult-ages" name="adult-ages"
+            placeholder="Enter ages separated by commas (e.g., 30, 25, 40)" required>
+
+        <label for="children-ages">Children Ages:</label>
+        <input type="text" id="children-ages" name="children-ages"
+            placeholder="Enter ages separated by commas (e.g., 5, 3, 8)" required>
+        <button type="submit">Submit</button>
+    
+    </form>
+
+
+    <h1> Accommodation Only</h1>
+    <form action="#" method="POST">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" placeholder="Enter your destination" required>
+        <label for="guest-number">Number of Guests:</label>
+        <input type="number" id="guest-number" name="guest-number" min="1" max="10" required>
+
+        <label for="check-in-date">Check-In Date:</label>
+        <input type="date" id="check-in-date" name="check-in-date" required>
+
+        <label for="number-of-nights">Number of Nights:</label>
+        <input type="number" id="number-of-nights" name="number-of-nights" min="1" max="30" required>
+
+        <label for="check-out-date">Check-Out Date:</label>
+        <input type="date" id="check-out-date" name="check-out-date" required>
+
+        <label for="adult-ages">Adult Ages:</label>
+        <input type="text" id="adult-ages" name="adult-ages"
+            placeholder="Enter ages separated by commas (e.g., 30, 25, 40)" required>
+
+        <label for="children-ages">Children Ages:</label>
+        <input type="text" id="children-ages" name="children-ages"
+            placeholder="Enter ages separated by commas (e.g., 5, 3, 8)" required>
+
+        <button type="submit">Book Now</button>
+    </form>
+
+    <h1>Plan Your Tour Packages</h1>
+    <form action="#" method="POST">
+        <label for="destination">From:</label>
+        <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
+
+        <label for="destination">To:</label>
+        <input type="text" id="destination" name="destination" placeholder="Enter destination" required>
+
+               
+        <label for="departure-date">Departure Date:</label>
+        <input type="date" id="departure-date" name="departure-date" required>
+
+        <label for="arrival-date">Arrival Date:</label>
+        <input type="date" id="arrival-date" name="arrival-date" required>
+
+        <label for="accommodation">Accommodation:</label>
+        <input type="text" id="accommodation" name="accommodation" placeholder="Enter accommodation details" required>
+
+        <label for="number-of-nights">Number of Nights:</label>
+        <input type="number" id="number-of-nights" name="number-of-nights" min="1" max="30" required>
+
+        <label for="guest-number">Number of Guests:</label>
+        <input type="number" id="guest-number" name="guest-number" min="1" max="10" required>
+
+        <label for="adult-ages">Adult Ages:</label>
+        <input type="text" id="adult-ages" name="adult-ages" placeholder="Enter ages separated by commas (e.g., 30, 25)"
+            required>
+
+        <label for="children-ages">Children Ages:</label>
+        <input type="text" id="children-ages" name="children-ages"
+            placeholder="Enter ages separated by commas (e.g., 5, 3, 8)" required>
+
+        <button type="submit">Book Now</button>
+    </form>
+
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <p class="text-center mb-5">Have questions or need assistance? Reach out to us through our contact page, and
+                our dedicated team will be happy to help you.</p>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5"
+                                placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p> 2025 My Website | All Rights Reserved</p>
+        <p>© 2025 Easy Travel. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" title="Facebook">FB</a>
+            <a href="https://twitter.com" target="_blank" title="Twitter">Tw</a>
+            <a href="https://instagram.com" target="_blank" title="Instagram">In</a>
+        </div>
     </footer>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
