@@ -1,0 +1,150 @@
+
+       
+
+.btn {
+    color: #3B2F2F !important;
+    /* Sets the text color of the button */
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Optional: Add a background for better visibility */
+    font-size: 14px;
+    /* Adjust font size if needed */
+}
+
+.navbar .nav-link {
+    color: #3B2F2F !important;
+    /* Sets the text color of the navbar links */
+}
+
+.navbar .nav-link.active {
+    font-weight: bold;
+    /* Makes the active link bold */
+}
+
+.navbar .navbar-nav {
+    margin-left: auto;
+    /* Aligns the nav links to the right */
+}
+
+section {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/images/easy-travel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    /* Ensures text is visible on the background */
+    position: relative;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+section>div {
+    position: relative;
+    z-index: 2;
+    /* Ensures content is above the overlay */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Ensures the navbar stays above other elements */
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    position: relative;
+    background-color: #f8f9fa;
+    /* Light gray background */
+    padding: 20px 20px 60px;
+    /* Space for footer content */
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 20px;
+    /* Distance from the bottom of the footer */
+    right: 20px;
+    /* Distance from the right of the footer */
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #3b5998;
+    /* Example color (Facebook blue) */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-icons a:hover {
+    background-color: #555;
+    /* Hover effect */
+}
