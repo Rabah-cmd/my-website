@@ -15,9 +15,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/logo-easy-travel.jpg" alt="Easy Travel Logo" width="30" height="30"
-                    class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="#"></a>
+                <img src="assets/images/logo-easy-travel.jpg" width="30" height="30">
                 Easy Travel
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -36,7 +35,7 @@
                         <a class="nav-link" href="#services">Our Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#flight only">Flight Only</a>
+                        <a class="nav-link" href="#flight">Flight Only</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#accommodation">Accommodation Only</a>
@@ -53,35 +52,32 @@
     </nav>
 
     <section class="d-flex justify-content-center align-items-center text-center text-white"
-        style="height: 100vh; background-image: url('assets/images/world.png'); no-repeat center center; background-size: cover;">
+        style="height: 100vh; background-image: url('assets/images/world.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
         <div>
             <h1 class="display-4">Welcome to Easy Travel</h1>
             <p class="lead">We are here to offer you a great service.</p>
             <a href="#contact" class="btn btn-light btn-lg mt-3">Contact us</a>
         </div>
-
-
-
     </section>
 
     <section id="about" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">About Us</h2>
+            <h2 class="text-center mb-5 text-white">About Us</h2>
             <div class="row d-flex justify-content-center">
                 <div class="col-md-4 text-center">
-                    <div class="p-3">
+                    <div class="p-3 text-white">
                         <h5>Our Mission</h5>
                         <p>To provide seamless and memorable travel experiences for our customers worldwide.</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
-                    <div class="p-3">
+                    <div class="p-3 text-white">
                         <h5>Our Vision</h5>
                         <p>To be the leading travel service provider, connecting people to their dream destinations.</p>
                     </div>
                 </div>
                 <div class="col-md-4 text-center">
-                    <div class="p-3">
+                    <div class="p-3 text-white">
                         <h5>Why Choose Us</h5>
                         <p>We offer personalized services, competitive pricing, and 24/7 customer support.</p>
                     </div>
@@ -92,14 +88,13 @@
 
     <section id="services" class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Our Services</h2>
+            <h2 class="text-center mb-5 text-white">Our Services</h2>
             <div class="row">
                 <div class="col-12 col-md-3 text-center">
                     <div class="card p-3">
                         <h5 class="card-title">Flight Booking</h5>
                         <p class="card-text">Book flights to your favorite destinations with ease.</p>
                     </div>
-
                 </div>
                 <div class="col-12 col-md-3 text-center">
                     <div class="card p-3">
@@ -120,13 +115,10 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
-
     </section>
-
-    <h1> Flight Only</h1>
+    <div> 
+        <h1 my-3> Flight Only</h1>
     <form action="#" method="POST">
         <label for="from">From:</label>
         <input type="text" id="from" name="from" placeholder="Enter from" required>
@@ -153,6 +145,8 @@
         <button type="submit">Submit</button>
 
     </form>
+</div>
+   
 
 
     <h1> Accommodation Only</h1>
