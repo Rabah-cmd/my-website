@@ -6,7 +6,6 @@
     /* Sets the text color of the button */
 }
 
-
 footer {
     position: fixed;
     bottom: 0;
@@ -45,7 +44,7 @@ section {
 }
 
 section::before {
-    content: '';
+    
     position: absolute;
     top: 0;
     left: 0;
@@ -54,7 +53,7 @@ section::before {
     z-index: 1;
 }
 
-section>div {
+section div {
     position: relative;
     z-index: 2;
     /* Ensures content is above the overlay */
@@ -148,3 +147,4 @@ footer {
     background-color: #555;
     /* Hover effect */
 }
+
