@@ -1,0 +1,188 @@
+/* Button Styles */
+.btn {
+    color: #3B2F2F !important;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .nav-link {
+    color: #3B2F2F !important;
+}
+
+.navbar .nav-link.active {
+    font-weight: bold;
+}
+
+.navbar .navbar-nav {
+    margin-left: auto;
+}
+
+.navbar .nav-link.active {
+    font-weight: bold;
+    color: #007bff !important; /* Change to your desired active color */
+}
+
+/* Section Styles */
+section {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/images/easy-travel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+section > div {
+    position: relative;
+    z-index: 2;
+}
+
+/* Typography */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.easy-travel-heading {
+    font-family: 'Handlee', cursive;
+    color: black;
+}
+
+.easy-travel-text {
+    color: black;
+}
+
+/* Form Styles */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Footer Styles */
+
+.social-icons {
+    position: absolute; /* Position relative to footer */
+    right: 20px;         /* 20px from the right */
+    bottom: 20px;        /* 20px from the bottom */
+    display: flex;       /* Align icons side by side */
+    gap: 15px;           /* Space between icons */
+}
+
+
+    .centered {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh; /* Optional, for vertical centering */
+      text-align: center;
+    }
+    h1, p {
+      margin: 10px;
+    }
+
+  
+    /* Styling the navbar */
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Space out navbar items */
+        background-color: #f4f4f4;
+        padding: 10px;
+      }
+  
+      /* Styling the image initially in the navbar */
+      .nav-image {
+        display: none; /* Remove the image from the navbar */
+      }
+  
+      /* Styling the image when moved to the bottom-right */
+      .bottom-center {
+        position: fixed; /* Makes the image stay fixed in the bottom-right */
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        height: auto;
+        margin-bottom: 10px; /* Optional margin */
+      }
+
+      .center-image {
+        float: center; /* Positions the image to the right */
+        margin: 10px; /* Adds some space around the image */
+      }
+    
+      
+    .bottom-right-image {
+        position: fixed; /* Makes the image stay fixed in the bottom-right */
+        display: flex;
+        align-items: center;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-end;
+
+      }
+    
+    
+    
+      
+      footer {
+        position: relative; /* Important! Makes footer a reference for absolute positioning */
+        height: 150px;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+    }
+
+  
+  
+  
