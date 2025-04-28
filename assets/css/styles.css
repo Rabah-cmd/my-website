@@ -16,15 +16,11 @@
 
 .navbar .nav-link.active {
     font-weight: bold;
+    color: #007bff !important; /* Active link color */
 }
 
 .navbar .navbar-nav {
-    margin-left: auto;
-}
-
-.navbar .nav-link.active {
-    font-weight: bold;
-    color: #007bff !important; /* Change to your desired active color */
+    margin-left: auto; /* Aligns nav links to the right */
 }
 
 /* Section Styles */
@@ -49,7 +45,7 @@ section::before {
 
 section > div {
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Ensures content is above the overlay */
 }
 
 /* Typography */
@@ -70,14 +66,13 @@ body {
 /* Form Styles */
 form {
     max-width: 500px;
-    margin: auto;
+    margin: auto; /* Centers the form */
 }
 
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    
 }
 
 input,
@@ -103,86 +98,52 @@ button:hover {
     background-color: #45a049;
 }
 
+/* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
 }
 
 /* Footer Styles */
+footer {
+    position: relative;
+    height: 150px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
 
 .social-icons {
-    position: absolute; /* Position relative to footer */
-    right: 20px;         /* 20px from the right */
-    bottom: 20px;        /* 20px from the bottom */
-    display: flex;       /* Align icons side by side */
-    gap: 15px;           /* Space between icons */
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+social-icons a:hover {
+    color: #777;
+}
+
+/* Centered Content */
+.centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1, p {
+    margin: 10px;
 }
 
 
-    .centered {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh; /* Optional, for vertical centering */
-      text-align: center;
-    }
-    h1, p {
-      margin: 10px;
-    }
 
-  
-    /* Styling the navbar */
-    nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between; /* Space out navbar items */
-        background-color: #f4f4f4;
-        padding: 10px;
-      }
-  
-      /* Styling the image initially in the navbar */
-      .nav-image {
-        display: none; /* Remove the image from the navbar */
-      }
-  
-      /* Styling the image when moved to the bottom-right */
-      .bottom-center {
-        position: fixed; /* Makes the image stay fixed in the bottom-right */
-        bottom: 0;
-        right: 0;
-        width: 100px;
-        height: auto;
-        margin-bottom: 10px; /* Optional margin */
-      }
 
-      .center-image {
-        float: center; /* Positions the image to the right */
-        margin: 10px; /* Adds some space around the image */
-      }
-    
-      
-    .bottom-right-image {
-        position: fixed; /* Makes the image stay fixed in the bottom-right */
-        display: flex;
-        align-items: center;
-        right: 0;
-        bottom: 0;
-        display: flex;
-        justify-content: flex-end;
-
-      }
-    
-    
-    
-      
-      footer {
-        position: relative; /* Important! Makes footer a reference for absolute positioning */
-        height: 150px;
-        background-color: #333;
-        color: white;
-        padding: 20px;
-    }
-
-  
-  
-  

@@ -60,75 +60,88 @@
         </div>
     </section>
     <div class="container mt-5">
-        <h2 class="text-center mb-5">Reservations</h2>
-        <h1 id="Flight">Flight</h1>
-        <form action="/submit-travel" method="POST">
+        <h2 class="text-center mb-5" style="border: 2px solid purple; display: center; padding: 10px; color: purple;">Reservations</h2>
+        <div class="row">
+            <!-- Left Column -->
+            <div class="col-md-6">
+                <h1 id="Flight">Flight</h1>
+                <form action="/submit-travel" method="POST">
+                    <label for="Airport">From:</label><br>
+                    <input type="Airport" id="Airport" name="airport" required><br><br>
+                    <label for="destination">To:</label><br>
+                    <input type="text" id="destination" name="destination" required><br><br>
+                    <label for="traveldate">Travel Date:</label><br>
+                    <input type="date" id="traveldate" name="traveldate" required><br><br>
+                    <label for="returnDate">Return Date:</label><br>
+                    <input type="date" id="returnDate" name="returnDate"><br><br>
+                    <label for="passengers">Number of Passengers:</label><br>
+                    <input type="number" id="passengers" name="passengers" min="1" value="1"><br><br>
+                    <label for="fullnames">Full Names:</label><br>
+                    <input type="text" id="fullnames" name="fullnames" required><br><br>
+                    <label for="special">Special Requests:</label><br>
+                    <textarea id="special" name="special" rows="4" cols="40"></textarea><br><br>
+                    <input type="submit" value="Book Now">
+                </form>
+            </div>
 
-            <label for="Airport">From:</label><br>
-            <input type="Airport" id="Airport" name="airport" required><br><br> <label for="destination">To:</label><br>
-            <input type="text" id="destination" name="destination" required><br><br>
-
-            <label for="traveldate">Travel Date:</label><br>
-            <input type="date" id="traveldate" name="traveldate" required><br><br>
-
-            <label for="returnDate">Return Date:</label><br>
-            <input type="date" id="returnDate" name="returnDate"><br><br>
-
-            <label for="passengers">Number of Passengers:</label><br>
-            <input type="number" id="passengers" name="passengers" min="1" value="1"><br><br>
-
-            <label for="fullnames">Full Names:</label><br>
-            <input type="text" id="fullnames" name="fullnames" required><br><br>
-
-            <label for="special">Special Requests:</label><br>
-            <textarea id="special" name="special" rows="4" cols="40"></textarea><br><br>
-
-            <input type="submit" value="Submit">
-        </form>
-
-        <h1>Accommodations</h1>
-        <form action="/submit-accommodation" method="POST">
-            <label for="fullname">Full Name:</label><br>
-            <input type="text" id="fullname" name="fullname" required><br><br>
-
-            <label for="email">Email Address:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-
-            <label for="checkin">Check-in Date:</label><br>
-            <input type="date" id="checkin" name="checkin" required><br><br>
-
-            <label for="checkout">Check-out Date:</label><br>
-            <input type="date" id="checkout" name="checkout" required><br><br>
-
-            <label for="roomType">Room Type:</label><br>
-            <select id="roomType" name="roomType" required>
-                <option value="">--Select a Room Type--</option>
-                <option value="single">Single</option>
-                <option value="double">Double</option>
-                <option value="family">Family Room</option>
-                <option value="suite">Suite</option>
-            </select><br><br>
-
-            <label for="adults">Number of Adults:</label><br>
-            <input type="number" id="adults" name="adults" min="1" value="1" required><br><br>
-
-            <label for="children">Number of Children:</label><br>
-            <input type="number" id="children" name="children" min="0" value="0"><br><br>
-
-            <label for="special">Special Requests:</label><br>
-            <textarea id="special" name="special" rows="4" cols="40"></textarea><br><br>
-
-            <input type="submit" value="Book Now">
-        </form>
+            <!-- Right Column -->
+            <div class="col-md-6">
+                <h1>Accommodations</h1>
+                <form action="/submit-accommodation" method="POST">
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" required><br><br>
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="checkin">Check-in Date:</label><br>
+                    <input type="date" id="checkin" name="checkin" required><br><br>
+                    <label for="checkout">Check-out Date:</label><br>
+                    <input type="date" id="checkout" name="checkout" required><br><br>
+                    <label for="roomType">Room Type:</label><br>
+                    <select id="roomType" name="roomType" required>
+                        <option value="">--Select a Room Type--</option>
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                        <option value="family">Family Room</option>
+                        <option value="suite">Suite</option>
+                    </select><br><br>
+                    <label for="adults">Number of Adults:</label><br>
+                    <input type="number" id="adults" name="adults" min="1" value="1" required><br><br>
+                    <label for="children">Number of Children:</label><br>
+                    <input type="number" id="children" name="children" min="0" value="0"><br><br>
+                    <label for="special">Special Requests:</label><br>
+                    <textarea id="special" name="special" rows="4" cols="40"></textarea><br><br>
+                    <input type="submit" value="Book Now">
+                </form>
+            </div>
+        </div>
     </div>
 
 
     <section id="Nature" class="py-5">
         <div class="container">
-            <h2 class="images mb-5">Nature</h2>
-            <img src="assets/images/nature.png" alt="mountains" width="50%" height="50%">
+            <div class="row align-items-center">
+                <!-- Left Column -->
+                <div class="col-md-6">
+                    <h2 class="mb-4" style="color: purple;">Explore the World</h2>
+                    <p>Travel is the gateway to discovering new cultures, breathtaking landscapes,
+                        and hidden treasures. It brings people closer to the world’s wonders,
+                        allowing them to step out of their routines and embrace the joy of exploration.
+                        Whether it’s a relaxing getaway or an adventurous journey,
+                        travel offers unforgettable experiences that inspire growth, connection,
+                        and lasting memories.
+                        
+                    </p>
+                </div>
+                <!-- Right Column -->
+                <div class="col-md-6 text-center">
+                    <img src="assets/images/safari.gif" alt="Safari" class="img-fluid mb-4" style="max-width: 100%; height: 300px; width: auto;">
+                    <img src="assets/images/fun-summer.gif" alt="Fun Summer" class="img-fluid" style="max-width: 100%; height: 300px; width: auto;">
+                    <img src="assets/images/Jamaica.gif" alt="Jamaica" class="img-fluid" style="max-width: 100%; height: 300px; width: auto;">
+                    <img src="assets/images/Vallarta.gif" alt="Vallarta" class="img-fluid" style="max-width: 100%; height: 300px; width: auto;">
+                    <img src="assets/images/never.gif" alt="Never" class="img-fluid" style="max-width: 100%; height: 300px; width: auto;">
+                </div>
+            </div>
         </div>
-
     </section>
     <!--moved to html-->
     <footer>
