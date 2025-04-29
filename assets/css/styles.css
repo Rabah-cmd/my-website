@@ -63,6 +63,10 @@ body {
     color: black;
 }
 
+h1, p {
+    margin: 10px;
+}
+
 /* Form Styles */
 form {
     max-width: 500px;
@@ -103,15 +107,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Footer Styles */
-footer {
-    position: relative;
-    height: 150px;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
-
+/* Social Icons */
 .social-icons {
     position: absolute;
     right: 20px;
@@ -126,7 +122,7 @@ footer {
     font-size: 20px;
 }
 
-social-icons a:hover {
+.social-icons a:hover {
     color: #777;
 }
 
@@ -140,10 +136,14 @@ social-icons a:hover {
     text-align: center;
 }
 
-h1, p {
-    margin: 10px;
+/* Footer Styles */
+footer {
+    position: relative;
+    height: 150px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
 }
-
 
 
 
