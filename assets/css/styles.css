@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Button Styles */
 .btn {
     color: #3B2F2F !important;
@@ -8,14 +9,39 @@
     position: sticky;
     top: 0;
     z-index: 1000;
+=======
+
+       
+
+.btn {
+    color: #3B2F2F !important;
+    /* Sets the text color of the button */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Optional: Add a background for better visibility */
+    font-size: 14px;
+    /* Adjust font size if needed */
+>>>>>>> 851997e76b6cb24bbbcbfccd1df979f008dda1d6
 }
 
 .navbar .nav-link {
     color: #3B2F2F !important;
+<<<<<<< HEAD
+=======
+    /* Sets the text color of the navbar links */
+>>>>>>> 851997e76b6cb24bbbcbfccd1df979f008dda1d6
 }
 
 .navbar .nav-link.active {
     font-weight: bold;
+<<<<<<< HEAD
     color: #007bff !important; /* Active link color */
 }
 
@@ -24,12 +50,26 @@
 }
 
 /* Section Styles */
+=======
+    /* Makes the active link bold */
+}
+
+.navbar .navbar-nav {
+    margin-left: auto;
+    /* Aligns the nav links to the right */
+}
+
+>>>>>>> 851997e76b6cb24bbbcbfccd1df979f008dda1d6
 section {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('assets/images/easy-travel.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+<<<<<<< HEAD
+=======
+    /* Ensures text is visible on the background */
+>>>>>>> 851997e76b6cb24bbbcbfccd1df979f008dda1d6
     position: relative;
 }
 
@@ -43,6 +83,7 @@ section::before {
     z-index: 1;
 }
 
+<<<<<<< HEAD
 section > div {
     position: relative;
     z-index: 2; /* Ensures content is above the overlay */
@@ -71,6 +112,22 @@ h1, p {
 form {
     max-width: 500px;
     margin: auto; /* Centers the form */
+=======
+section div {
+    position: relative;
+    z-index: 2;
+    /* Ensures content is above the overlay */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+>>>>>>> 851997e76b6cb24bbbcbfccd1df979f008dda1d6
 }
 
 label {
@@ -102,6 +159,7 @@ button:hover {
     background-color: #45a049;
 }
 
+<<<<<<< HEAD
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
@@ -147,3 +205,55 @@ footer {
 
 
 
+=======
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Ensures the navbar stays above other elements */
+
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    position: relative;
+    background-color: #f8f9fa;
+    /* Light gray background */
+    padding: 20px 20px 60px;
+    /* Space for footer content */
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 20px;
+    /* Distance from the bottom of the footer */
+    right: 20px;
+    /* Distance from the right of the footer */
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #3b5998;
+    /* Example color (Facebook blue) */
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-icons a:hover {
+    background-color: #555;
+    /* Hover effect */
+}
+
+>>>>>>> 851997e76b6cb24bbbcbfccd1df979f008dda1d6
